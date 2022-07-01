@@ -1,51 +1,55 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --color-primary: #40CCEA; /* header, title, footer */
-    --color-secondary: #0096D0; /* link, button */
-    --color-text: #333;
-    --color-red: #F00;
-    --color-ocher: #CD8C56;
-    --color-facebook: #4267B2; 
-    --color-twitter: #1da1f2;  
-    --color-pinterest: #bd081c; 
-    --color-instagram: #8948C1;
+  --color-primary: #40ccea; /* header, title, footer */
+  --color-secondary: #0096d0; /* link, button */
+  --color-text: #333;
+  --color-red: #f00;
+  --color-ocher: #cd8c56;
+  --color-facebook: #4267b2;
+  --color-twitter: #1da1f2;
+  --color-pinterest: #bd081c;
+  --color-instagram: #8948c1;
 }
 
 html {
-    font-family: Lato, 'sans-serif';
-    font-size: 18px;
-    line-height: 1.6;
-    scroll-behavior: smooth;
+  font-family: Lato, "sans-serif";
+  font-size: 18px;
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, th {
-    font-weight: normal;
-    font-style: normal;
+h1,
+h2,
+h3,
+h4,
+th {
+  font-weight: normal;
+  font-style: normal;
 }
 
 h1 {
-    font-size: 2.3rem;
-    font-weight: bold;
+  font-size: 2.3rem;
+  font-weight: bold;
 }
 
 h2 {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    margin: 1rem 0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
 }
 
 h3 {
-    font-size: 1.4rem;
-    margin: 1rem 0;
+  font-size: 1.4rem;
+  margin: 1rem 0;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 section {
@@ -57,7 +61,7 @@ article {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 i {
@@ -89,7 +93,7 @@ i {
 }
 
 .text-color-ocher {
-  color: var(--color-ocher)
+  color: var(--color-ocher);
 }
 
 .text-align-center {
@@ -97,16 +101,16 @@ i {
 }
 
 .container {
-    width: 90%;
-    max-width: 900px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .button {
-    background-color: var(--color-secondary);
-    padding: 0.7rem;
-    color: white;
-    border-radius: 6px;
+  background-color: var(--color-secondary);
+  padding: 0.7rem;
+  color: white;
+  border-radius: 6px;
 }
 
 .button-submit {
@@ -119,49 +123,49 @@ i {
 }
 
 .header-logo {
-    text-align: center;
+  text-align: center;
 }
 
 .header-nav {
-    background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .header-nav ul {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .header-nav li {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .header-nav a {
-    color: white;
-    font-size: 1.3rem;
+  color: white;
+  font-size: 1.3rem;
 }
 
 .main-heading {
-    color: var(--color-primary);
-    text-align: center;
-    border-bottom: 1px dashed;
-    padding: 2rem 0 0.6rem 0;
-    width: 90%;
-    margin: 0 auto;
-    word-spacing: 10px;
+  color: var(--color-primary);
+  text-align: center;
+  border-bottom: 1px dashed;
+  padding: 2rem 0 0.6rem 0;
+  width: 90%;
+  margin: 0 auto;
+  word-spacing: 10px;
 }
 
 .trip-list-heading {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .trip-content {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .trip-content p {
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 .trip-item {
@@ -170,10 +174,13 @@ i {
 }
 
 .trip-item:nth-child(odd) img {
-    order: 1;
+  order: 1;
 }
 
-table, th, tr, td {
+table,
+th,
+tr,
+td {
   border: 1px solid #d2d2d2;
 }
 
@@ -193,7 +200,7 @@ table, th, tr, td {
 }
 
 .about {
-  background-image: url('../images/fond.jpg');
+  background-image: url("../images/fond.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -214,7 +221,7 @@ table, th, tr, td {
 }
 
 .contact-form-background {
-  background: #444444 url('../images/map-image.png');
+  background: #444444 url("../images/map-image.png");
   background-size: cover;
   padding-bottom: 1rem;
 }
@@ -231,7 +238,7 @@ table, th, tr, td {
   width: 50%;
 }
 
-input.form-control{
+input.form-control {
   height: 45px;
   width: 100%;
   margin-bottom: 1rem;
@@ -252,7 +259,7 @@ textarea.form-control {
   font-size: 1.2rem;
 }
 
-input[type=submit] {
+input[type="submit"] {
   border: 0;
   outline: none;
 }
@@ -270,4 +277,39 @@ input[type=submit] {
 
 .footer p {
   color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .trip-content img {
+    display: none;
+  }
+
+  .about-content {
+    width: 100%;
+  } 
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .contact-social-networks {
+    text-align: center;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 16px;
+  }
 }
