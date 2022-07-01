@@ -193,7 +193,7 @@ table, th, tr, td {
 }
 
 .about {
-  background-image: url('/images/fond.jpg');
+  background-image: url('../images/fond.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -214,7 +214,7 @@ table, th, tr, td {
 }
 
 .contact-form-background {
-  background: #444444 url(/images/map-image.png);
+  background: #444444 url('../images/map-image.png');
   background-size: cover;
   padding-bottom: 1rem;
 }
