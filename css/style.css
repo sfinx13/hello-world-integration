@@ -20,8 +20,10 @@ html {
     font-family: Lato, 'sans-serif';
     font-size: 18px;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
-h1, h2, h3 {
+
+h1, h2, h3, h4, th {
     font-weight: normal;
     font-style: normal;
 }
@@ -33,32 +35,86 @@ h1 {
 
 h2 {
     font-size: 1.6rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
 }
 
 h3 {
     font-size: 1.4rem;
+    margin: 1rem 0;
 }
 
 ul {
     list-style-type: none;
 }
 
+section {
+  margin: 30px 0;
+}
+
+article {
+  color: var(--color-text);
+}
+
 a {
     text-decoration: none;
 }
 
-section {
-    margin: 30px 0;
+i {
+  margin-right: 0.5rem;
 }
 
-article {
-    color: var(--color-text);
+.fa-brands {
+  font-size: 2rem;
+}
+
+.fa-facebook-square {
+  color: var(--color-facebook);
+}
+
+.fa-twitter-square {
+  color: var(--color-twitter);
+}
+
+.fa-pinterest-square {
+  color: var(--color-pinterest);
+}
+
+.fa-instagram-square {
+  color: var(--color-instagram);
+}
+
+.text-color-red {
+  color: var(--color-red);
+}
+
+.text-color-ocher {
+  color: var(--color-ocher)
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .container {
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
+}
+
+.button {
+    background-color: var(--color-secondary);
+    padding: 0.7rem;
+    color: white;
+    border-radius: 6px;
+}
+
+.button-submit {
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  color: white;
+  border-radius: 6px;
+  font-size: 1.2rem;
 }
 
 .header-logo {
@@ -91,4 +147,126 @@ article {
     width: 90%;
     margin: 0 auto;
     word-spacing: 10px;
+}
+
+.trip-list-heading {
+    margin: 1rem 0;
+}
+
+.trip-content {
+    display: flex;
+    gap: 1rem;
+}
+
+.trip-content p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.trip-item {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid;
+}
+
+.trip-item:nth-child(odd) img {
+    order: 1;
+}
+
+table, th, tr, td {
+  border: 1px solid #d2d2d2;
+}
+
+.table-seasons {
+  width: 100%;
+  color: var(--color-text);
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table-seasons tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+.table-seasons td {
+  padding: 1rem;
+}
+
+.about {
+  background-image: url('/images/fond.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  padding: 3rem;
+}
+
+.about-content {
+  background-color: white;
+  width: 50%;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.contact-form-background {
+  background: #444444 url(/images/map-image.png);
+  background-size: cover;
+  padding-bottom: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  width: 50%;
+}
+
+input.form-control{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #d2d2d2;
+  display: block;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+textarea.form-control {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #d2d2d2;
+  color: var(--color-text);
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+input[type=submit] {
+  border: 0;
+  outline: none;
+}
+
+.contact-social-networks {
+  margin: 1rem 0;
+}
+
+.footer {
+  background-color: var(--color-primary);
+  text-align: center;
+  height: 200px;
+  padding-top: 3rem;
+}
+
+.footer p {
+  color: white;
 }
