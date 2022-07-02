@@ -120,9 +120,14 @@ i {
   border-radius: 6px;
   font-size: 1.2rem;
   cursor: pointer;
+  width: 7rem;
 }
 
-.header-logo {
+.button:hover, .button-submit:hover {
+  background-color: var(--color-primary);
+}
+
+.header {
   text-align: center;
 }
 
@@ -137,11 +142,18 @@ i {
 
 .header-nav li {
   padding: 1rem;
+  width: 100%;
 }
 
 .header-nav a {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.header-nav a:hover {
+  font-weight: bold;
 }
 
 .main-heading {
