@@ -98,38 +98,40 @@
       </section>
       <section id="trip-list" class="container">
         <h2>Les meilleurs saisons pour voyager</h2>
-        <table class="table-seasons">
-          <tr>
-            <th>Ville</th>
-            <th>Pays</th>
-            <th>Période</th>
-          </tr>
-          <tr>
-            <td>Bali</td>
-            <td>Indonésie</td>
-            <td>Juin à septembre</td>
-          </tr>
-          <tr>
-            <td>Marrakech</td>
-            <td>Maroc</td>
-            <td>Mars à juin et septembre à novembre</td>
-          </tr>
-          <tr>
-            <td>Miami</td>
-            <td>USA</td>
-            <td>Janvier à avril, novembre, décembre</td>
-          </tr>
-          <tr>
-            <td>Vienne</td>
-            <td>Autriche</td>
-            <td>Juin à septembre</td>
-          </tr>
-          <tr>
-            <td>Sidney</td>
-            <td>Australie</td>
-            <td>Mars à mai, septembre, octobre</td>
-          </tr>
-        </table>
+        <div class="table-container">
+          <table class="table-content">
+            <tr>
+              <th>Ville</th>
+              <th>Pays</th>
+              <th>Période</th>
+            </tr>
+            <tr>
+              <td>Bali</td>
+              <td>Indonésie</td>
+              <td>Juin à septembre</td>
+            </tr>
+            <tr>
+              <td>Marrakech</td>
+              <td>Maroc</td>
+              <td>Mars à juin et septembre à novembre</td>
+            </tr>
+            <tr>
+              <td>Miami</td>
+              <td>USA</td>
+              <td>Janvier à avril, novembre, décembre</td>
+            </tr>
+            <tr>
+              <td>Vienne</td>
+              <td>Autriche</td>
+              <td>Juin à septembre</td>
+            </tr>
+            <tr>
+              <td>Sidney</td>
+              <td>Australie</td>
+              <td>Mars à mai, septembre, octobre</td>
+            </tr>
+          </table>
+        </div>
       </section>
       <section id="about" class="about">
         <div class="container">
@@ -170,6 +172,7 @@
                 id="firstname"
                 name="firstname"
                 placeholder="Votre nom"
+                required
               />
               <input
                 class="form-control"
@@ -177,6 +180,7 @@
                 id="email"
                 name="email"
                 placeholder="Votre email"
+                required
               />
               <input
                 class="form-control"
@@ -185,6 +189,7 @@
                 name="phone"
                 placeholder="Votre téléphone"
                 pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
+                required
               />
             </div>
             <div class="form-group">

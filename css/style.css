@@ -196,18 +196,22 @@ td {
   border: 1px solid #d2d2d2;
 }
 
-.table-seasons {
+.table-container {
+  overflow-x: auto;
+}
+
+.table-content {
   width: 100%;
   color: var(--color-text);
   text-align: center;
   border-collapse: collapse;
 }
 
-.table-seasons tr:nth-child(even) {
+.table-content tr:nth-child(even) {
   background-color: #eeeeee;
 }
 
-.table-seasons td {
+.table-content td {
   padding: 1rem;
 }
 
@@ -216,7 +220,6 @@ td {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 550px;
   padding: 3rem;
 }
 
@@ -224,7 +227,6 @@ td {
   background-color: white;
   width: 50%;
   padding: 1rem;
-  margin-top: 2rem;
 }
 
 .about-content p {
@@ -291,6 +293,11 @@ input[type="submit"] {
   color: white;
 }
 
+.footer a:hover {
+  color: white;
+}
+
+
 @media screen and (max-width: 1000px) {
   .header-nav ul {
     flex-direction: column;
@@ -301,9 +308,13 @@ input[type="submit"] {
     display: none;
   }
 
+  .about .container {
+    width: 100%;
+  }
+
   .about-content {
     width: 100%;
-  } 
+  }
 
   .contact-form {
     flex-direction: column;
@@ -316,12 +327,21 @@ input[type="submit"] {
   .contact-social-networks {
     text-align: center;
   }
-
 }
-
 
 @media screen and (max-width: 500px) {
   html {
     font-size: 16px;
+  }
+
+  .about {
+    padding: 1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .table-seasons {
+    overflow-y: scroll;
   }
 }
