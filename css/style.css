@@ -156,6 +156,14 @@ i {
   font-weight: bold;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .8;
+  width: 100%;
+}
+
 .main-heading {
   color: var(--color-primary);
   text-align: center;
